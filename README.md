@@ -1,7 +1,7 @@
 # heap-sort-in-C
 # include<stdio.h>
 
-void swap(int *a,int *b)
+void Swap(int *a,int *b)
 {
     int c;
     c = *a;
@@ -23,7 +23,7 @@ void heap(int a[],int n,int i)
     }
     if(largest != i)
     {
-        swap(&a[i],&a[largest]);
+        Swap(&a[i],&a[largest]);
         heap(a,n,largest);
     }
 }
